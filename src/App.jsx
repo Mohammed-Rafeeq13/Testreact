@@ -1,27 +1,9 @@
-import {BrowserRouter,Route,Routes,Link} from 'react-router-dom';
-import Login from './Login';
-import Signup from './Signup';
-import About from './About';
-function Header(){
-  return(
-    <ul>
-      <li><Link to="/">Login</Link></li>
-      <li><Link to="/signup">Signup</Link></li>
-      <li><Link to="/about">About</Link></li>
-    </ul>
-  )
-}
 function App(){
   return(
     <div>
-      <BrowserRouter>
-      <Header/>
-      <Routes>
-        <Route path="/" element={<Login/>}/>
-        <Route path="/signup" element={<Signup/>}/>
-        <Route path="/about" element={<About/>}/>
-      </Routes>
-      </BrowserRouter>
+      <br/><img src={"img.avif"} height={200} width={200}/><br/><br/>
+      <img src={"src/assets/img.avif"} height={200} width={200}/><br/><br/>
+      <img src={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTovyN1blQU2-pHiYJVwqdyeu_7pbQ4fSjdaw&s"}/>
     </div>
   )
 }
@@ -33,48 +15,34 @@ export default App;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// import {BrowserRouter,Route,Routes,Link} from 'react-router-dom';
+// import Login from './Login';
+// import Signup from './Signup';
+// import About from './About';
+// function Header(){
+//   return(
+//     <ul>
+//       <li><Link to="/">Login</Link></li>
+//       <li><Link to="/signup">Signup</Link></li>
+//       <li><Link to="/about">About</Link></li>
+//     </ul>
+//   )
+// }
+// function App(){
+//   return(
+//     <div>
+//       <BrowserRouter>
+//       <Header/>
+//       <Routes>
+//         <Route path="/" element={<Login/>}/>
+//         <Route path="/signup" element={<Signup/>}/>
+//         <Route path="/about" element={<About/>}/>
+//       </Routes>
+//       </BrowserRouter>
+//     </div>
+//   )
+// }
+// export default App;
 
 
 
@@ -146,26 +114,6 @@ export default App;
 // export default App;
 
 //Routing Concept in react.js
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
