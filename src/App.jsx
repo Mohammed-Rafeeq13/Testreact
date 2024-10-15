@@ -1,17 +1,76 @@
-function App(){
-  return(
+//useState in reactjs
+import {useState} from 'react'
+
+const App = () => {
+  const [count,setCount]=useState(0);
+  return (
     <div>
-      <br/><img src={"img.avif"} height={200} width={200}/><br/><br/>
-      <img src={"src/assets/img.avif"} height={200} width={200}/><br/><br/>
-      <img src={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTovyN1blQU2-pHiYJVwqdyeu_7pbQ4fSjdaw&s"}/>
+      <center>
+        <h1>{count}</h1>
+        <br/>
+        <button onClick={()=>setCount(count+1)}>useState</button>
+      </center>
     </div>
   )
 }
-export default App;
+
+export default App
+
+// import {useState} from 'react'
+
+// const App = () => {
+//   const[name,setName]=useState("Rafeeq")
+//   return (
+//     <div>
+//       <center>
+//         <h1>{name}</h1>
+//         <br/>
+//         <button onClick={()=>setName("Mohammed Rafeeq")}>useState</button>
+//       </center>
+//     </div>
+//   )
+// }
+
+// export default App
+
+//Event mechanism in reactjs
+// import Test from './components/Test'
+// const App = () => {
+//   return (
+//     <div>
+//       <Test/>
+//       {/* <h2>This is Jsx code with arrow function</h2> */}
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+//Props in reactjs
+// import Test from './components/Test'
+// function App(){
+//   return(
+//     <div>
+//       <Test name="Mohammed Rafeeq" role="Student"/>
+//       <Test salary="150000"/>
+//     </div>
+//   )
+// }
+// export default App;
 
 
 
-
+// function App(){
+//   return(
+//     <div>
+//       <br/><img src={"img.avif"} height={200} width={200} style={{margin:'20px'}}/><br/><br/>
+//       <img src={"src/assets/img.avif"} height={200} width={200} style={{margin:'20px'}}/><br/><br/>
+//       <img src={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTovyN1blQU2-pHiYJVwqdyeu_7pbQ4fSjdaw&s"} style={{margin:'20px'}}/>
+//     </div>
+//   )
+// }
+// export default App;
 
 
 
@@ -43,9 +102,6 @@ export default App;
 //   )
 // }
 // export default App;
-
-
-
 
 
 //There are 2 types of components in reactjs  1.Functional component , 2.Class component
@@ -89,10 +145,7 @@ export default App;
 // }
 // export default App;
 
-
-
-
-
+//Adding Bootstrap
 // import './App.css'
 // function App(){
 //   return(
@@ -115,16 +168,7 @@ export default App;
 
 //Routing Concept in react.js
 
-
-
-
-
-
-
-
-
-
-
+//Adding Other Componets in App Component
 // import First from './First'
 // import Second from './Second'
 // import './App.css'
